@@ -1,0 +1,57 @@
+{
+    "repo_type" : "layered_psd",
+    "file_name" : "mockup.psd",
+    "builds" : {
+        "Layer 1" : [
+            {
+                "name" : "header",
+                "description" : "This is the official logo of Static CI!",
+                "steps" : [
+                        {
+                            "action" : "convert",
+                            "target" : "png"
+                        },
+                        {
+                            "action" : "scale",
+                            "target" : 200
+                        }
+                ]
+            }
+        ],
+        "A Second Layer": [
+            {
+                "name" : "launcher_small",
+                "description" : "Small Icon for Static-CI",
+                "steps" : 
+                    [
+                        {
+                            "action" : "scale",
+                            "target" : 40
+                        }
+                    ]
+            },
+            {
+                "name" : "launcher_medium",
+                "description" : "Medium Icon for Static-CI",
+                "steps" : 
+                    [
+                        {
+                            "action" : "scale",
+                            "target" : 80
+                        }
+                    ]
+            },
+            {
+                "name" : "launcher_large",
+                "description" : "Large Icon for Static-CI",
+                "steps" : 
+                    [
+                        {
+                            "action" : "scale",
+                            "target" : 120
+                        }
+                    ]
+            }
+        ]
+    }
+}
